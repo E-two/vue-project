@@ -5,7 +5,7 @@
   "author": "etwo.xu <henryxudjy@163.com>",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --hot --inline --content-base src --progress --config build/webpack.dev.conf.js",
     "start": "concurrently \"npm run dev\" \"npm run api\"",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "e2e": "node test/e2e/runner.js",
