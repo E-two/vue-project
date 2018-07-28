@@ -1,0 +1,210 @@
+@import './variables.css';
+
+html {
+  font-size: 12px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  letter-spacing: .02em;
+  background-color: #f5f7fa;
+}
+
+@font-face {
+  font-family: 'Black Ops One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Black Ops One Regular'),
+    local('BlackOpsOne-Regular'),
+    url('/assets/fonts/BlackOpsOne-Regular.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,img {padding:0;margin:0;}
+
+ul{
+  list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-danger {
+  color: var(--danger-color);
+}
+
+.root-layout {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.main-content {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+/* app-page */
+.app-page {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.app-page__actions {
+  margin-bottom: 2rem;
+}
+
+.app-page__title {
+  font-size: 18px;
+  margin-bottom: 1em;
+}
+
+/* form */
+.buttons-group button {
+  margin-right: 1rem;
+}
+
+.app-table th {
+  white-space: nowrap;
+}
+
+.app-table td.nowrap {
+  white-space: nowrap;
+}
+
+.app-table__actions {
+  line-height: 2.5em;
+}
+
+.app-table__avatar {
+  cursor: pointer;
+}
+
+.app-table__pager {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.app-table__pager-current {
+  margin: 0 1rem;
+}
+
+/* filter */
+.app-page__filter {
+  margin-bottom: 2rem;
+}
+
+/* page alert */
+.app-page__alert {
+  margin: 2em 0;
+}
+
+.app-page__title .app-page__alert {
+  display: inline-block;
+  margin: 0 0 0 1em;
+}
+
+/* logo */
+.app-logo {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.app-logo img {
+  height: 40px;
+}
+
+.app-logo__title {
+  font-size: 16px;
+  line-height: 1;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.app-logo__title small {
+  display: block;
+  font-weight: 200;
+  letter-spacing: 2px;
+  margin-top: 5px;
+}
+
+/* use css to set position of modal */
+.vertical-center-modal {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.vertical-center-modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  width: 0;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.relative{
+  position: relative;
+}
+
+.absolute{
+  position: absolute;
+}
+
+.mr-8{
+  margin-right: 8px;
+}
+
+.mb-8{
+  margin-bottom: 8px;
+}
+
+.ml-5{
+  margin-left: 5px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mt-70 {
+  margin-top: 70px;
+}
+
+.hide{
+  display: none!important;
+}
+
+.center {
+  display: block;
+  text-align: -webkit-center;
+}
+
+.overflow {
+  overflow: hidden;
+}
