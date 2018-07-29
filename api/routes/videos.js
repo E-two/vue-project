@@ -8,7 +8,7 @@ router.post('/play', (req, res) => {
   res.json({
     code: 200,
     message: 'success',
-    result: getFrames(20)
+    result: getFrames(50)
   });
 });
 

@@ -7,7 +7,7 @@ const LOGIN_TIME = 12 * 60 * 60; // 2 hours
 export default {
 
   [PLAY_VIDEO] (state, res) {
-    state.videosData = res;
+    state.videosData = Object.keys(res).map(key => res[key]);
   },
 
   [USER_LOGIN] (state, token) {

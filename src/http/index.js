@@ -58,13 +58,13 @@ axios.interceptors.request.use(
 );
 
 // After an asynchronous request
-axios.interceptors.response.use(function (response) {
+axios.interceptors.response.use(response => {
   const { code, message, result } = response.data;
   if (code !== 200) {
     $message.error(message);
   }
   return result;
-}, function (err) {
+}, err => {
   // Handling response errors
   if (err && err.response) {
     switch (err.response.status) {

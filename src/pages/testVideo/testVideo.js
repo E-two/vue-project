@@ -1,6 +1,7 @@
 import YHeader from '/components/header';
 import YTestImg from './testImg';
 import YVideo from '/components/video';
+import YTestList from './testList';
 
 import { mapActions } from 'vuex';
 
@@ -54,6 +55,7 @@ export default {
   components: {
     YHeader,
     YTestImg,
-    YVideo
+    YVideo,
+    YTestList
   }
 };

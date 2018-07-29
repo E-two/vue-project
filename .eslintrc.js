@@ -40,6 +40,12 @@ module.exports = {
     "object-shorthand": "warn",
     "prefer-const": 1,
     "quotes": [1, "single"],
-    "prefer-template": 2
+    "prefer-template": 2,
+    "no-var": 1,
+    "prefer-arrow-callback":1,
+    "prefer-const": 1,
+    "no-extend-native": 0,
+    "no-extra-bind": 2,
+    "no-console": 1
   }
 }

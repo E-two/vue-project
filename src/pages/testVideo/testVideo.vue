@@ -27,6 +27,9 @@
           <div class="center">
             <y-video v-show="this.vData.src !== ''" :vData="vData" ref="videoPlayer"></y-video>
           </div>
+          <div class="pic-area box-size overflow mt-70">
+            <y-test-list />
+          </div>
         </div>
       </div>
     </div>

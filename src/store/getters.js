@@ -7,20 +7,20 @@ export default {
   },
 
   getToken (state) {
-    const tokeTemp = this.$cookies.get(USER_TOKEN);
+    const tokeTemp = window.$cookies.get(USER_TOKEN);
     if (tokeTemp != null || undefined !== tokeTemp) state.token = tokeTemp;
     return state.token;
   },
 
   getIsLogin (state) {
-    const isLoginTemp = this.$cookies.get(USER_ISLOGIN);
+    const isLoginTemp = window.$cookies.get(USER_ISLOGIN);
     if (isLoginTemp != null) state.isLogin = isLoginTemp;
     else state.isLogin = false;
     return state.isLogin;
   },
 
   getUserInfo (state) {
-    const userInfoTemp = this.$cookies.get(USER_USERINFO);
+    const userInfoTemp = window.$cookies.get(USER_USERINFO);
     if (userInfoTemp != null) state.userInfo = userInfoTemp;
     return state.userInfo;
   }
